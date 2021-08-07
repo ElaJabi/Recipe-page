@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    
+}
+
+:root {
+    --montserat:'Montserrat', sans-serif;
+    --playfair: 'Playfair Display', serif;
+}
+
+html {
+    font-size: 90%;
+}
+
+body {
+    padding: 3rem 15%;
+   
+}
+
+section {
+    padding: 4rem 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4rem;
+}
+
+.header .heading h1 {
+    font-family: var(--playfair);
+    font-size: 3.2rem;
+    padding-bottom: 2rem;
+}
+
+.header .heading .paragraph {
+    display: flex;
+    
+}
+
+.header .heading .paragraph img {
+    
+   
+   
+    
+}
+
+.header .heading .paragraph p {
+    padding: 0 1rem;
+    width: 70%;
+    line-height: 1.5;
+    font-style: italic;
+    color: #4F4F4F;
+    padding-bottom: 2rem;
+    font-family: var(--montserat);
+    font-size: 1rem;
+}
+
+.header .image img {
+    width: 100%;
+}
+
+.container-recipe {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    padding-top: 3rem;
+    position: relative;
+    
+    
+}
+
+
+.container-recipe .card {
+    align-content: right;
+    position: absolute;
+    right: 0;
+    
+    padding: 3rem 2rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 216px;
+    height: 367px;
+}
+
+.container-recipe .card .card-content {
+    padding: 1rem ;
+    display: flex;
+
+}
+
+.container-recipe .card .card-content .icon {
+    padding-right: 2rem;
+    width: 30px;
+    height: 40px;
+    font-size: 2.3rem;
+    
+}
+
+.container-recipe .card .card-content .description {
+    padding-left: 1rem;
+}
+
+.container-recipe .card .card-content .description h4 {
+    color: #BDBDBD;
+    font-size: .7rem;
+    font-family: var(--montserat);
+    
+}
+
+.container-recipe .card .card-content .description p {
+    color: #333333;
+    font-family: var(--montserat);
+
+}
+
+.container-recipe .card .card-content .icon #utensils {
+    color:  #F2994A;
+}
+
+
+
+.container-recipe .content .ingredients h3 {
+    font-size: 1.7rem;
+    font-family:var(--playfair);
+    padding-bottom: 2rem;
+}
+
+.container-recipe .content .ingredients h6 {
+    font-family: var(--playfair);
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #333333;
+    font-weight: normal;
+    padding-bottom: 2rem;
+}
+
+.container-recipe .content .checkbox h6 {
+    font-family: var(--playfair);
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #333333;
+    font-weight: normal;
+    padding: 2rem 0;
+    
+}
+
+.container-recipe .content .checkbox .input {
+    padding: .5rem 0;
+    
+}
+
+.container-recipe .content .checkbox {
+    
+}
+
+
+.container-recipe .content .checkbox .input span {
+    font-size: 1.2rem;
+    font-family: var(--montserat);
+    padding-left: 2rem;
+    
+    
+    
+}
+
+ .heading h3 {
+    font-size: 1.7rem;
+    font-family:var(--playfair);
+    padding-top: 2rem;
+}
+
+ .ordered-list {
+    padding: 2rem 0;
+}
+
+.ordered-list  {
+    
+}
+
+ .ordered-list .number {
+   font-size: 2rem;
+}
+
+
+.ordered-list ol{
+    list-style: none;
+    padding: 0;
+}
+.ordered-list ol li{
+    margin: 2% 0;
+    display: flex;
+}
+    .ordered-list ol li::before{
+        content: counter(list-item);
+        counter-increment: list-item;
+        background-color:#0288D1 ;
+        font-family:var(--montserat);
+        font-weight: bold;
+        font-size: 2.5rem;
+        line-height: 32px;
+        border-radius: 15%;
+        color: #FFFFFF;
+        padding: .1rem .6rem;
+        height: fit-content;
+    }
+
+    .ordered-list ol li p{
+        margin-left:3% ;
+        line-height: 2;
+        font-family: var(--montserat);
+        font-size: 1.2rem;
+    }
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+
+    html {
+        font-size: 70%;
+    }
+
+    body {
+        padding: 2rem 5%;
+    }
+
+    .header {
+        padding-bottom: 0;
+    }
+
+    .header .heading .paragraph p {
+        width: 100%;
+    }
+
+    .container-recipe{
+        grid-template-columns: 1fr;
+        
+        
+    }
+
+    .container-recipe .content{
+        order: 2;
+
+
+    }
+
+    .container-recipe .card {
+        display: flex;
+        position: relative;
+        box-shadow: none;
+        height: auto;
+        width: auto;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+
+}
